@@ -6,87 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai 6</title>
     <style>
-        .table_1 {
-            width: 300px;
-            height: 200px;
-            border-color: #e0cda5;
-            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
-            text-align: center;
-            margin: auto;
-        }
-
-        .table_1 td {
-            padding: 10px;
-        }
-
-        .c6910 {
-            background-color: #ffff00;
-        }
-
-        .c4578 {
-            background-color: #fa7f02;
-        }
-
-        .border {
-            height: 0.5px;
-            background-color: #ccc;
-            margin-top: 20px;
-        }
-
-        .table_2 {
-            background-color: #ffd078;
-            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
-        }
-
-        .table_2 tr:not(:first-child) {
-            color: rgba(190, 19, 19, 0.995);
-            text-decoration: 1px underline;
-        }
-        
-        div {
-            display: flex;
-            margin-top: 20px;
-            justify-content: space-evenly;
-        }
-        
-        .table_3, .table_4 {
-            display: inline-block;
-            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
-            height: 130px;
-            width: 200px;
-        }
-
-        .table_3 td{
-            padding: 6px;
-        }
-
-        .table_5 {
-            border-color: #ffd078;
-            margin: auto;
-            margin-top: 20px;
-            background-color: #fdf;
-            text-align: center;
-            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
-        }
-
-        .table_5 tr:first-child {
-            font-weight: 600;
-            text-decoration: 1px underline;
-        }
-
-        .table_5 tr:not(:first-child) {
-            color: #6a90ff;
-        }
-
-        .table_5 td  {
-            padding: 6px 12px;
-            border: 2px solid ;
-            border-color: #c617b8;
-        }
-
-        .number {
-            background-color: #adf;
-            color: #000;
+        #box {
+            border: 2px solid black;
         }
     </style>
 </head>
@@ -115,100 +36,23 @@
     </table>
     <div class="border"></div>
 
-    <!-- Table 2, 3, 4 (b)-->
-    <div>
-        <table class="table_2" border="1">
-            <tr>
-                <td>(1)</td>
-                <td>(2)</td>
-                <td>(3)</td>
-                <td colspan="2">(4)</td>
-                <td>(5)</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="4">Part I</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-                <td colspan="3">Chapter 1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-                <td colspan="2">Section A</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-                <td colspan="2">Section B</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-                <td colspan="3">Chapter 2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-                <td colspan="2">Section A</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-                <td colspan="2">Section B</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="4">Part II</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-                <td colspan="3">Chapter 3</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-                <td colspan="2">Section A</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-                <td colspan="2">Section B</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-                <td colspan="3">Chapter 4</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-                <td colspan="2">Section A</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-                <td colspan="2">Section B</td>
-                <td></td>
-            </tr>
-        </table>
-        <!-- Table 3 -->
-        <div class="table_3">      
-            <p><b>With cellpadding:</b></p>    
-            <table border="1">
-                <tr>
-                    <td>6.470</td>
-                    <td>6.470</td>
-                </tr>
-                <tr>
-                    <td>6.470</td>
-                    <td>6.470</td>
-                </tr>
-            </table>
+        <div id="Starter">
+            <h2>Starter</h2>
+            <ul>
+                <li>Có nhiều món
+                    <a target="_blank" href="https://2sao.vn/thuc-don-cho-nhung-nguoi-luc-nao-cung-noi-an-gi-cung-duoc-n-230128.html">(v)</a>
+                </li>
+                <li>Có nhiều món</li>
+            </ul>
+            <a href="#menu">top</a>
+        </div>
+        <div id="MainCourses">
+            <h2>Main Courses</h2>
+            <ul>
+                <li>Có nhiều món <a target="_blank" href="https://2sao.vn/thuc-don-cho-nhung-nguoi-luc-nao-cung-noi-an-gi-cung-duoc-n-230128.html">(v)</a>
+                </li>
+            </ul>
+            <a href="#menu">top</a>
         </div>
 
         <!-- Table 4 -->
