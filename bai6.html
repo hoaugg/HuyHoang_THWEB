@@ -1,59 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="20095591" content="MaSoSinhVien">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-
-<body>
+    <title>Bai 6</title>
     <style>
-        #box {
-            border: 2px solid black;
+        .table_1 {
+            width: 300px;
+            height: 200px;
+            border-color: #e0cda5;
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            margin: auto;
+        }
+
+        .table_1 td {
+            padding: 10px;
+        }
+
+        .c6910 {
+            background-color: #ffff00;
+        }
+
+        .c4578 {
+            background-color: #fa7f02;
+        }
+
+        .border {
+            height: 0.5px;
+            background-color: #ccc;
+            margin-top: 20px;
+        }
+
+        .table_2 {
+            background-color: #ffd078;
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .table_2 tr:not(:first-child) {
+            color: rgba(190, 19, 19, 0.995);
+            text-decoration: 1px underline;
+        }
+        
+        div {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-evenly;
+        }
+        
+        .table_3, .table_4 {
+            display: inline-block;
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+            height: 130px;
+            width: 200px;
+        }
+
+        .table_3 td{
+            padding: 6px;
+        }
+
+        .table_5 {
+            border-color: #ffd078;
+            margin: auto;
+            margin-top: 20px;
+            background-color: #fdf;
+            text-align: center;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .table_5 tr:first-child {
+            font-weight: 600;
+            text-decoration: 1px underline;
+        }
+
+        .table_5 tr:not(:first-child) {
+            color: #6a90ff;
+        }
+
+        .table_5 td  {
+            padding: 6px 12px;
+            border: 2px solid ;
+            border-color: #c617b8;
+        }
+
+        .number {
+            background-color: #adf;
+            color: #000;
         }
     </style>
-    <div id="box">
-        <h2>Example Cafe Menu</h2>
-        <label id="menu" for="">
-            <a href="#Starter">Starter</a> |
-            <a href="#MainCourses">Main Courses</a> |
-            <a href="#Desserts">Desserts</a>
-        </label>
+</head>
+<body>
+    <!-- Table 1 (a)-->
+    <table class="table_1" border="12">
+        <tr>
+            <td>1</td>
+            <td colspan="4">2</td>
+        </tr>
+        <tr>
+            <td rowspan="3">3</td>
+            <td class="c4578">4</td>
+            <td class="c4578">5</td>
+            <td colspan="2" rowspan="2" class="c6910">6</td>
 
-        <div id="Starter">
-            <h2>Starter</h2>
-            <ul>
-                <li>Có nhiều món
-                    <a target="_blank" href="https://2sao.vn/thuc-don-cho-nhung-nguoi-luc-nao-cung-noi-an-gi-cung-duoc-n-230128.html">(v)</a>
-                </li>
-                <li>Có nhiều món</li>
-            </ul>
-            <a href="#menu">top</a>
-        </div>
-        <div id="MainCourses">
-            <h2>Main Courses</h2>
-            <ul>
-                <li>Có nhiều món <a target="_blank" href="https://2sao.vn/thuc-don-cho-nhung-nguoi-luc-nao-cung-noi-an-gi-cung-duoc-n-230128.html">(v)</a>
-                </li>
-            </ul>
-            <a href="#menu">top</a>
-        </div>
-        <div id="Desserts">
-            <h2>Desserts</h2>
-            <ul>
-                <li>
-                    có nhiều món<a target="_blank" href="https://2sao.vn/thuc-don-cho-nhung-nguoi-luc-nao-cung-noi-an-gi-cung-duoc-n-230128.html">(v)</a>
+        </tr>
+        <tr>
+            <td class="c4578">7</td>
+            <td class="c4578">8</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="c6910">9</td>
+            <td colspan="2" class="c6910">10</td>
+        </tr>
+    </table>
+    <div class="border"></div>
 
-                </li>
-            </ul>
-            <a href="#menu">top</a>
+    <!-- Table 2, 3, 4 (b)-->
+    <div>
+        <table class="table_2" border="1">
+            <tr>
+                <td>(1)</td>
+                <td>(2)</td>
+                <td>(3)</td>
+                <td colspan="2">(4)</td>
+                <td>(5)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="4">Part I</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="3">Chapter 1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2">Section A</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2">Section B</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="3">Chapter 2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2">Section A</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2">Section B</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="4">Part II</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="3">Chapter 3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2">Section A</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2">Section B</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="3">Chapter 4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2">Section A</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2">Section B</td>
+                <td></td>
+            </tr>
+        </table>
+        <!-- Table 3 -->
+        <div class="table_3">      
+            <p><b>With cellpadding:</b></p>    
+            <table border="1">
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Table 4 -->
+        <div class="table_4">
+            <p><b>Table with spanning now:</b></p>
+            <table border="1">
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td>6.470</td>
+                </tr>
+            </table>
         </div>
     </div>
+    <div class="border"></div>
 
+    <!-- Table 5 -->
+    <table class="table_5" border="10">
+        <caption style="background-color: #ffd078; color: #d006cd; font-weight: 600;">NUMBER 1-5 in VARIOUS LANGUAGES</caption>
+            <tr>
+                <td></td>
+                <td><b>English</b></td>
+                <td><b>Espanol</b></td>
+                <td><b>Francais</b></td>
+                <td><b>Italiano</b></td>
+                <td><b>Deutsch</b></td>
+            </tr>
+            <tr>
+                <td class="number">1</td>
+                <td><i>one</i></td>
+                <td><i>uno</i></td>
+                <td><i>un</i></td>
+                <td><i>uno</i></td>
+                <td><i>eins</i></td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td><i>two</i></td>
+                <td><i>dos</i></td>
+                <td><i>deux</i></td>
+                <td><i>due</i></td>
+                <td><i>zwei</i></td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td><i>three</i></td>
+                <td><i>tres</i></td>
+                <td><i>trois</i></td>
+                <td><i>tre</i></td>
+                <td><i>drei</i></td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td><i>four</i></td>
+                <td><i>cuator</i></td>
+                <td><i>quatre</i></td>
+                <td><i>quattro</i></td>
+                <td><i>vier</i></td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td><i>five</i></td>
+                <td><i>cinco</i></td>
+                <td><i>cinq</i></td>
+                <td><i>cinque</i></td>
+                <td><i>funf</i></td>
+            </tr>
+    </table>
 </body>
-
 </html>
